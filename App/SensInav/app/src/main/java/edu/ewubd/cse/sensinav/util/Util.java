@@ -12,7 +12,7 @@ public class Util {
         return instance;
     }
 
-    private String HOME_URL = "https://muthosoft.com/univ/sensinav/";
+    private String HOME_URL = "_URL_TO_SERVER_SIDE_SCRIPT_";
 
     public void setUrl(String url){
         this.HOME_URL = url;
