@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FB"
+    tools:context=".MapViewActivity">
+
+    <edu.ewubd.cse.sensinav.mapview.MyCanvas
+        android:id="@+id/myCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <edu.ewubd.cse.sensinav.androidqa.wheel.WheelView
+        android:id="@+id/floorWheel"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnZoomIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_bg"
+                android:backgroundTint="@color/blue"
+                android:text="Zoom In" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnZoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_bg"
+                android:backgroundTint="@color/blue"
+                android:text="Zoom Out" />
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/six"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:textSize="11sp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:layout_height="34dp"-->
+<!--        android:text="6TH FLOOR" />-->
+<!--    <Button-->
+<!--        android:id="@+id/five"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:textSize="11sp"-->
+<!--        android:layout_below="@+id/six"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:layout_height="34dp"-->
+<!--        android:text="5TH FLOOR" />-->
+<!--    <Button-->
+<!--        android:id="@+id/ground"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:textSize="11sp"-->
+<!--        android:layout_height="34dp"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:text="1ST FLOOR" />-->
+<!--    <Button-->
+<!--        android:id="@+id/two"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:textSize="11sp"-->
+<!--        android:layout_height="34dp"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:layout_below="@+id/ground"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:text="2nd FLOOR" />-->
+</RelativeLayout>

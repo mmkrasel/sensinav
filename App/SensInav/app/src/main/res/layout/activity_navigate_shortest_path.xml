@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FB">
+
+    <edu.ewubd.cse.sensinav.mapview.MyCanvas
+        android:id="@+id/myCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnZoomIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_bg"
+                android:backgroundTint="@color/blue"
+                android:text="Zoom In" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnZoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_button_bg"
+                android:backgroundTint="@color/blue"
+                android:text="Zoom Out" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressCircle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnZoomIn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:background="@drawable/rectangle_button_bg"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:text="Zoom In" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/increase"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="false"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:background="@drawable/rectangle_button_bg"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:text="Increase" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnZoomOut"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:layout_toStartOf="@id/btnZoomIn"-->
+<!--        android:background="@drawable/rectangle_button_bg"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:text="Zoom Out" />-->
+<!--    <Button-->
+<!--        android:id="@+id/previous"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:textSize="10dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:background="@drawable/rectangle_button_bg"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:text="Previous" />-->
+<!--    <Button-->
+<!--        android:id="@+id/next"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:textSize="10dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:background="@drawable/rectangle_button_bg"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:text="Next" />-->
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rectangle_border_bg"
+    android:padding="24dp">
+    <TextView
+        android:id="@+id/node_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create First Node"
+        android:textColor="@color/node_info_text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/node_info_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/node_info_text"
+        android:layout_centerHorizontal="true"
+        android:text="(i.e., Entrance)"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"/>
+
+    <EditText
+        android:id="@+id/etFirstNodeName"
+        android:layout_width="220dp"
+        android:layout_height="@dimen/field_height"
+        android:layout_below="@id/node_info_hint"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rectangle_border_bg"
+        android:gravity="center"
+        android:hint="Entrance Name"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/btnSaveEntranceNode"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFirstNodeName"
+        android:background="@drawable/rectangle_button_bg"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/rectangle_1223_color"
+        android:text="@string/text_ek6_string"/>
+</RelativeLayout>

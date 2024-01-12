@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/labelPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Search Shortest Path"
+        android:textColor="@color/node_info_text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/labelHintCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelPageTitle"
+        android:layout_marginTop="44dp"
+        android:layout_centerHorizontal="true"
+        android:text="Select your nearest door"
+        android:textColor="@color/node_info_text_color"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:id="@+id/sourceNode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="12dp"
+        android:background="@drawable/rectangle_border_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/labelHintCurrentLocation">
+
+        <AutoCompleteTextView
+            android:id="@+id/tvCurrentRoom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:background="@drawable/rectangle_border_bg"
+            android:hint="Your current location?"
+            android:textSize="14sp"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerArrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sourceNode"
+        android:layout_marginTop="-4dp">
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_route"
+            android:importantForAccessibility="no"
+            android:layout_centerInParent="true"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tvDistance"-->
+<!--            android:layout_width="90dp"-->
+<!--            android:layout_height="122dp"-->
+<!--            android:rotation="90"-->
+<!--            android:text="0.0 m"-->
+<!--            android:textSize="12sp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_toEndOf="@id/imgArrow"-->
+<!--            android:layout_marginStart="-40dp"/>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/adjacentField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="12dp"
+        android:background="@drawable/rectangle_border_bg"
+        android:layout_below="@id/containerArrow"
+        android:layout_centerHorizontal="true">
+        <AutoCompleteTextView
+            android:id="@+id/tvDestinationRoom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:background="@drawable/rectangle_border_bg"
+            android:hint="Where to go?"
+            android:textSize="14sp"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/labelHintDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adjacentField"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:text="Select your destination door"
+        android:textColor="@color/node_info_text_color"
+        android:textSize="15sp"/>
+
+
+    <Button
+        android:id="@+id/btnShortestPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelHintDestination"
+        android:background="@drawable/rectangle_button_bg"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/rectangle_1223_color"
+        android:text="Show Shortest Path"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp">
+        <Button
+            android:id="@+id/btnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_button_bg"
+            android:backgroundTint="@color/blue"
+            android:text="Switch to Administrative Mode"
+            android:textColor="@color/rectangle_1223_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
