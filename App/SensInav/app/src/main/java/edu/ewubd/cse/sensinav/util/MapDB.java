@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class MapDB extends SQLiteOpenHelper {
 
 	public MapDB(Context context) {
-		super(context, "MapDB.db", null, 2);
+		super(context, "MapDB.db", null, 1);
 	}
 	@Override
 	public void onCreate(SQLiteDatabase db) {
