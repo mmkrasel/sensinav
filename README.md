@@ -43,3 +43,4 @@ MapInfo.getInstance().STEP_THRESHOLD = _NEW_VALUE_;
 MapInfo.getInstance().GYROSCOPE_THRESHOLD = _NEW_VALUE_;
 ....
 ```
+Moreover, appearances of the map can be changed by updating the colors, strokes at _init()_ method of _mapview/MyCanvas.java_ class.
