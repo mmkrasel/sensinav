@@ -30,7 +30,7 @@ public class Sensors {
 
     public void startSensors(){
         if(context != null) {
-            calculate = new Calculate(0.8f,1f);
+            calculate = new Calculate(MapInfo.getInstance().STEP_THRESHOLD,MapInfo.getInstance().GYROSCOPE_THRESHOLD);
             serviceIntent = new Intent(context, SensorService.class);
             context.startService(serviceIntent);
         }
