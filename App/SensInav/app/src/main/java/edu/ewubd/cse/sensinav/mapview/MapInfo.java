@@ -27,6 +27,8 @@ public class MapInfo{
     private MapDB mapDB;
     public int MAX_NODE_ID = 0;
     public float STEP_DISTANCE = 0.6f;
+    public float STEP_THRESHOLD = 0.8f;
+    public float GYROSCOPE_THRESHOLD = 1.0f;
     public String buildingName = "";
     public ArrayList<Node> nodeList;
     public HashMap<String, Integer> nodesMap = new HashMap<>();
